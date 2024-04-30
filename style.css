@@ -150,7 +150,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -384,7 +383,7 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-top: 150vh;
+  margin-top: 2rem;
 }
 
 .color-container {
@@ -415,7 +414,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin-top: 50vh;
+  margin-top: 2rem;
 }
 
 .contact-info-upper-container {
