@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abhijith Raj</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Academic Profile</a></li>
+          <li><a href="#projects">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abhijith Raj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/me.png" alt="Abhijith profile picture" class="about-pic1"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhijith Raj</h1>
+        <p class="section__text__p1">Seagoing Physical Oceanographer</p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume_abhi.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="openInNewTab('https://www.linkedin.com/in/abhijitth/')"
+          />
+          <img
+            src="./assets/researchgate.svg"
+            alt="My Researchgate profile"
+            class="icon"
+            onclick="openInNewTab('https://www.researchgate.net/profile/Abhijith-Raj')"
+          />
+          <script>
+                function openInNewTab(url) {
+                  var win = window.open(url, '_blank');
+                win.focus();
+                }
+          </script>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <div class="section__pic-container">
+
+          <div class="slider-container">
+            <div class="slides">
+              <img src="./assets/slider-1.png" alt="uCTD Operation" class="about-pic" />
+              <img src="./assets/slider-2.png" alt="ECFS" class="about-pic" />
+              <img src="./assets/slider-3.png" alt="Radiosonde" class="about-pic" />
+              <img src="./assets/slider-4.png" alt="Research Cruise" class="about-pic" />
+              <!-- Add more images here -->
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />air-sea interactions, turbulence, eddy covariance</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Physics<br />M.Sc. Oceanography</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an early career oceanographer, I bring four years of dedicated experience and a fervent research interest in air-sea interactions, turbulence dynamics, and the precise estimation of eddy covariance fluxes within marine boundary layers. Currently, engaged in pursuing my Ph.D., in the pursuit of a Ph.D., my focus lies on micrometeorological intricacies across the Bay of Bengal. In my research, I utilize state-of-the-art methodologies like eddy covariance and bulk flux estimations to study momentum flux/wind stress over the ocean. My expertise extends to proficiently utilizing diverse instrumentation for in-situ data acquisition, garnered from over 80 days of sea duty. Engaging in the full spectrum of research activities, from meticulous data collection through to rigorous analysis and subsequent publication, underscores my commitment to advancing our understanding of oceanic processes. Furthermore, I possess adeptness in numerical wave modeling, particularly through WaveWatchIII, further enhancing my capabilities in comprehensive oceanographic research.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Academic Profile</h1>
+      <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-containe">
+          <h2 class="experience-sub-title">Education</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>2017-2019</h3>
+                  <p>M.Sc. Oceanography, Cochin University of Science and Technology, Kochi, India.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>2013-2016</h3>
+                  <p>B.Sc. Physics, University of Calicut, Calicut, India.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>2013</h3>
+                  <p>Diploma in Computer Applications, Centre for Development of Imaging Technology, Kerala, India.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+            <div class="details-containe">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Instruments</h3>
+                  <ul class="bullet-list">
+                    <li>Eddy-Covariance Flux System (Sonic Anemometer and Infrared Gas analyzer)</li>
+                    <li>underway CTD (uCTD)</li>
+                    <li>CTD</li>
+                    <li>Vertical Microstructure Profiler (VMP)</li>
+                    <li>LADCP</li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numerical Models</h3>
+                  <p>WaveWatch III</p>
+                  <br>
+                </div>
+                <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tools</h3>
+                  <ul class="bullet-list">
+                    <li>Matlab</li>
+                    <li>Ferret</li>
+                    <li>GMT</li>
+                    <li>Shell Scripting</li> </ul>
+                </div>
+              </article>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Platforms</h3>
+                  <ul class="bullet-list">
+                    <li>Unix/Linux</li>
+                    <li>Windows</li></ul>
+                    <br>
+                </div>
+                <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming Languages</h3>
+                  <ul class="bullet-list">
+                    <li>Fortran</li>
+                    <li>C</li></ul>
+                </div>
+              </article>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-containe">
+            <h2 class="experience-sub-title">Research Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>[ December 2019 – Present ]</h3>
+                  <p><p>Research Fellow, Indian National Centre for Ocean Information Services (INCOIS), Hyderabad, India</p>
+                        <p>Pursuing PhD “On the micro-meteorological aspects of air-sea flux transfer in the The Indian Ocean” under the guidance of Dr B Praveen Kumar.</p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>[September 2019 - December 2019]</h3>
+                  <p><p>Research Fellow, Indian Institute of Tropical Meteorology, Pune, India</p>
+                        <p>Induction Training Program</p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>[ December 2018 – April 2019 ]</h3>
+                  <p><p>Master’s dissertation entitled “Mixed Layer Temperature Budget during Northward Propagating Summer Monsoon Intraseasonal Oscillation (MISO) in the Arabian Sea.” under the guidance of Dr Girishkumar M S.</p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-containe">
+            <h2 class="experience-sub-title">Activities, Trainings and Achievements</h2>
+            <div class="article-container">
+            <ul class="bullet-list">
+              <li>Received Best Poster award - Eighth National Conference of the Ocean Society of India (OSICON- 23) organised by INCOIS and Ocean Society of India (OSI) during, 23-25 August 2023.</li>
+              <li>Received American Geophysical Union (AGU) Jerome M. Paros Scholarships in Geophysical Instrumentation for the year 2023.</li>
+              <li>Scientific cruise onboard ORV Sagar Nidhi (SN-178) from 28th June to 25th July 2023.</li>
+              <li>Oral Session at AGU Fall Meeting - 2022 held from 12-16 December 2022.</li>
+              <li>Scientific cruise onboard CRV- Sagar Tara (ST-26), the Bay of Bengal in February 2022</li>
+              <li>Oral Session (Virtually) at Ocean Sciences Meeting (OSM 2022) held from 28 Feb- Mar 4, 2022</li>
+              <li>Poster Presentation in the International Indian Ocean Science Conference (IIOSC) - 2022 from 14’ - 18’ March 2022</li>
+              <li>Hands-on training on DCFS data processing using the INCOIS Flux mooring data 9, 16 & 23 September 2021</li>
+              <li>Oral Presentation in the Seventh National Conference of the Ocean Society of India (OSICON-21) organised by the National Centre for Polar and Ocean Research (NCPOR), Ministry of Earth Sciences (MoES), Goa and Ocean Society of India (OS) during 12-14, August 2021</li>
+              <li>Secured 17th  rank for National Eligibility Test (NET) for Lectureship (LS) and Research (Earth Sciences), conducted by Council of Scientific and Industrial Research, Govt. of India</li>
+              <li>Scientific cruise onboard ORV Sagar Nidhi (SN-137) from 3rd January 2019 to 05th February 2019</li>
+              <li>SMART training on “Satellite Meteorology” at Space Applications Center, Indian Space Research Organization (ISRO) during March 2018</li>
+              <li>Participated in a National workshop on “Monsoons in the changing climate” at the Department of Atmospheric Sciences, CUSAT, in 2018</li>
+              <li>Participated in a National workshop on “Statistical Analysis & Computational Tools in Ocean Data Processing” at the Department of Physical Oceanography, CUSAT, in 2018.</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Publications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Paper 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Assessment of the forecasting potential of WAVEWATCH-III model under different Indian Ocean wave conditions</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://doi.org/10.1007/s12040-023-02045-w')"
+              >
+                Read Here
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Paper 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ship-borne measurements of air-sea momentum flux transfer in the Arabian Sea </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Under Revision
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Paper 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Exploring the impact of southern ocean sea ice on the Indian Ocean swells.</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://doi.org/10.1038/s41598-022-16634-0')"
+              >
+                Read Here
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Paper 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Direct measurements of wind stress over Indian Ocean</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('#')"
+              >
+                Under Prep
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:abhijitthraj@gmail.com?subject=Message from Portfolio&body=Hi, I got this link from your portfolio.">abhijitthraj@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abhijitth/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Academic Profile</a></li>
+            <li><a href="#projects">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <p>Copyright &#169; 2024 John Doe. All Rights Reserved.</p> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram</title>
+        <p>Check out my 
+  <!-- Instagram link with appealing text and target="_blank" to open in a new tab -->
+  <a href="https://www.instagram.com/abhijitth/" target="_blank" class="instagram-link">
+    <span class="italic-text">Instagram</span>
+  </a> for some amazing photos!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
