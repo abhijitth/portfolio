@@ -149,7 +149,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 10vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -320,14 +320,14 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
 }
 
 .experience-details-container {
@@ -385,7 +385,7 @@ article .icon {
 #projects {
   position: relative;
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 
 .color-container {
@@ -426,7 +426,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 
 .contact-info-container {
