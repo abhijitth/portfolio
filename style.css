@@ -486,15 +486,16 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; /* Adjust the height as needed */
+  height: 100%; /* Adjust the height as needed */
   margin: auto 0;
 }
 
 .slider-container {
-  width: 400px; /* Match the width of the profile picture */
+  width: 100%; /* Match the width of the profile picture */
   overflow: hidden;
   border-radius: 2rem; /* Adjust the border radius as needed */
 }
+
 
 .slides {
   display: flex;
