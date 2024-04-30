@@ -507,3 +507,7 @@ footer p {
   height: auto;
   border-radius: 2rem; /* Adjust the border radius to match the container */
 }
+@media only screen and (max-width: 768px) {
+  .about-pic {
+    display: none; /* Hide images on smaller screens */
+  }
