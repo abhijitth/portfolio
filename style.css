@@ -320,7 +320,7 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 10vh;
+  margin-bottom: 0.5rem;
 }
 
 .experience-sub-title {
@@ -384,6 +384,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-top: 0.5rem;
 }
 
 .color-container {
