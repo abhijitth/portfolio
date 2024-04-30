@@ -319,7 +319,6 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 2rem;
 }
 
 .experience-sub-title {
@@ -351,6 +350,7 @@ section {
 }
 .article-container {
   display: flex;
+  margin-top: 2rem;
   text-align: initial;
   flex-wrap: wrap;
   gap: 5rem;
