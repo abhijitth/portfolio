@@ -1,20 +1,49 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-let slideIndex = 0;
-const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.about-pic');
+document.addEventListener('DOMContentLoaded', () => {
 
-function showSlides() {
-  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  slideIndex++;
-  if (slideIndex === images.length) {
-    slideIndex = 0;
-  }
-  setTimeout(showSlides, 2000); // Change slide every 2 seconds
-}
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('header nav a');
 
-showSlides();
+    // --- Smooth scrolling for navigation links ---
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                const headerOffset = document.querySelector('header').offsetHeight;
+                const elementPosition = targetSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // --- Highlight title and nav link on scroll ---
+    const observerOptions = {
+        root: null,
+        rootMargin: '-100px 0px -50% 0px',
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetId = entry.target.id;
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${targetId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
